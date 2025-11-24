@@ -107,6 +107,8 @@
       gap: 1.25rem;
       font-size: 0.9rem;
       color: var(--muted);
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     nav a:hover {
@@ -448,7 +450,7 @@
       padding: 0.28rem 0.6rem;
     }
 
-    /* Subjects / services */
+    /* Courses / services */
     .subject-grid {
       display: grid;
       gap: 1rem;
@@ -640,8 +642,6 @@
       nav {
         width: 100%;
         justify-content: space-between;
-        flex-wrap: wrap;
-        row-gap: 0.4rem;
       }
 
       .rates-grid {
@@ -680,7 +680,7 @@
       </div>
       <nav>
         <a href="#about">About</a>
-        <a href="#subjects">Subjects</a>
+        <a href="#courses">Courses</a>
         <a href="#education">Education</a>
         <a href="#rates">Rates</a>
         <a href="#resume">Resume</a>
@@ -696,23 +696,20 @@
       <!-- Hero -->
       <section class="hero">
         <div>
-          <div class="hero-text-eyebrow">Private Tutoring</div>
+          <div class="hero-text-eyebrow">Personalized tutoring</div>
           <h1 class="hero-title">
-            Hi, I’m Suzan — <span class="accent">your patient, structured tutor</span> for
-            Math, Spanish, English, Arabic &amp; Computer Science.
+            Suzan Abdelqader — <span class="accent">a thoughtful, structured tutor in Math, Languages &amp; Computer Science.</span>
           </h1>
           <p class="hero-subtitle">
-            I help students truly understand what they’re learning — not just memorize it.
-            Together we focus on clarity, confidence, and building strong foundations
-            that actually stick, whether it’s solving equations, writing stronger essays,
-            mastering languages, or learning to think like a programmer.
+            I combine a Computer Science background, language studies, and an MBA in progress to help students learn with clarity and confidence.
+            Our sessions are calm, organized, and focused on truly understanding the “why” behind each concept — not just memorizing steps.
           </p>
 
           <div class="hero-tags">
-            <span class="chip chip-strong">Math (middle school – college)</span>
-            <span class="chip">Spanish &amp; English writing support</span>
-            <span class="chip">Arabic reading &amp; speaking</span>
-            <span class="chip">Computer Science &amp; coding basics</span>
+            <span class="chip chip-strong">Math: Pre-Algebra to Calculus</span>
+            <span class="chip">Spanish &amp; English — all levels</span>
+            <span class="chip">Arabic — all levels</span>
+            <span class="chip">Computer Science — beginner &amp; intermediate</span>
           </div>
 
           <div class="hero-actions">
@@ -720,13 +717,16 @@
               View rates &amp; packages
               <span class="btn-icon">↘</span>
             </a>
+            <a href="#courses" class="btn-ghost">
+              Explore courses
+            </a>
             <a href="#contact" class="btn-ghost">
               Book a free intro chat
             </a>
           </div>
 
           <p class="hero-note">
-            Sessions are personalized, encouraging, and paced around how <em>you</em> learn best.
+            I meet students where they are and build a clear path forward — one concept, one problem, and one win at a time.
           </p>
         </div>
 
@@ -816,61 +816,71 @@
         </div>
       </section>
 
-      <!-- Subjects / Services -->
-      <section id="subjects">
-        <div class="section-heading">Subjects</div>
+      <!-- Courses -->
+      <section id="courses">
+        <div class="section-heading">Courses</div>
         <div class="section-card">
-          <h2>Subjects I tutor</h2>
+          <h2>Courses &amp; areas of focus</h2>
           <p>
-            I work with middle school, high school, and college students, as well as adult learners
-            who want to refresh skills or learn something new.
+            These are the main subject areas and specific topics I teach. Every course is personalized to your level, pace, and learning goals.
           </p>
 
           <div class="subject-grid">
+
+            <!-- Math -->
             <article class="subject-item">
               <div class="subject-title">Mathematics</div>
-              <div class="subject-meta">Algebra • Pre-Calculus • Calculus basics • Statistics foundations</div>
-              <p>
-                Building strong fundamentals, showing step-by-step problem solving, and helping you
-                feel confident instead of intimidated by numbers and formulas.
-              </p>
+              <div class="subject-meta">Middle school through college</div>
+              <p><strong>Areas of focus:</strong></p>
+              <ul style="margin-top:6px; padding-left:18px; color: var(--muted); font-size:0.82rem;">
+                <li>Pre-Algebra</li>
+                <li>Algebra</li>
+                <li>Geometry</li>
+                <li>Pre-Calculus</li>
+                <li>Calculus (foundations)</li>
+              </ul>
             </article>
 
+            <!-- Spanish -->
             <article class="subject-item">
               <div class="subject-title">Spanish</div>
-              <div class="subject-meta">Grammar • Conversation • Writing support • Study help</div>
+              <div class="subject-meta">All levels</div>
               <p>
-                Support from someone who studied Spanish in-depth — focusing on clear explanations,
-                practice, and helping you sound more natural and confident.
+                Beginner, intermediate, and advanced instruction including grammar, conversation practice,
+                study support, and writing guidance — with an emphasis on clarity and building real confidence using the language.
               </p>
             </article>
 
+            <!-- English -->
             <article class="subject-item">
               <div class="subject-title">English</div>
-              <div class="subject-meta">Reading comprehension • Essays • Editing • Organization</div>
+              <div class="subject-meta">All levels</div>
               <p>
-                Helping with planning essays, structuring arguments, polishing writing, and improving
-                clarity so your ideas come through clearly on the page.
+                Reading comprehension, writing skills, essay planning and structure, editing, and polishing work
+                so your ideas come through clearly and effectively.
               </p>
             </article>
 
+            <!-- Arabic -->
             <article class="subject-item">
               <div class="subject-title">Arabic</div>
-              <div class="subject-meta">Reading basics • Pronunciation • Vocabulary • Conversation practice</div>
+              <div class="subject-meta">All levels</div>
               <p>
-                Gentle, encouraging sessions for learners at beginner or conversational levels who
-                want more exposure to Arabic in a supportive environment.
+                Reading, vocabulary, pronunciation, and conversation practice for learners at any stage —
+                with a patient, supportive environment to build comfort and consistency.
               </p>
             </article>
 
+            <!-- Computer Science -->
             <article class="subject-item">
               <div class="subject-title">Computer Science</div>
-              <div class="subject-meta">Intro CS • Programming logic • Problem solving</div>
+              <div class="subject-meta">Beginner &amp; intermediate</div>
               <p>
-                Making coding and computer science less intimidating by focusing on how things work
-                under the hood and walking through problems logically, step by step.
+                Core CS concepts, computing logic, programming fundamentals, and problem-solving.
+                We focus on understanding how and why things work, not just copying code.
               </p>
             </article>
+
           </div>
         </div>
       </section>
